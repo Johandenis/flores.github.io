@@ -9,6 +9,35 @@
 :root {
   --dark-color: #000000;
 }
+/* Asegúrate de que este CSS esté en tu archivo main.css */
+
+.container {
+  position: relative;
+}
+
+.flowers {
+  position: relative;
+  /* Otros estilos de flores aquí */
+}
+
+/* Estilos para el mensaje */
+.message {
+  position: absolute;
+  bottom: 20px; /* Ajusta la posición según necesites */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff; /* O el color que prefieras */
+  font-size: 1.5em; /* Ajusta el tamaño de la fuente según necesites */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente si deseas */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que el texto resalte */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message p {
+  margin: 0;
+}
 
 body {
   display: flex;
@@ -59,7 +88,7 @@ body {
       transparent 19px,
       transparent 22px
     ),
-    linear-gradient(90deg, rgb(255, 242, 0), rgb(240, 240, 240));
+    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
 }
 
 .flowers {
